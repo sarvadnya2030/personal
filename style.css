@@ -1,0 +1,145 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
+    background: black;
+}
+
+/* Bottom Right Message */
+.bottom-right-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 3; /* Ensure it's above the overlay */
+}
+
+/* Screens */
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Initial Screen */
+#initialScreen {
+    background: #000;
+}
+
+#clickMeButton {
+    background: #ff6f61;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#clickMeButton:hover {
+    background: #ff3b2f;
+    transform: scale(1.05);
+}
+
+/* Ensure Main Content Appears */
+#mainContent {
+    display: none;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Collage */
+.background-collage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    opacity: 0.9;
+    z-index: 1; /* Ensure it's below the overlay and message */
+}
+
+.background-collage div {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Above the background collage */
+}
+
+/* Message Container */
+.message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Above the overlay and background */
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Main Message */
+.main-message {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hidden Class */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+}
+
+/* Assign Background Images */
+.background-collage div:nth-child(1) { background-image: url('https://i.pinimg.com/736x/3f/68/84/3f68845e3649374b4d4e21047cb3fdd9.jpg'); }
+.background-collage div:nth-child(2) { background-image: url('https://i.pinimg.com/736x/c5/03/ee/c503ee74d7cf825cb43aee25c8f3031a.jpg'); }
+.background-collage div:nth-child(3) { background-image: url('https://i.pinimg.com/736x/c7/45/a6/c745a66a545e651d7086d81d2b05076d.jpg'); }
+.background-collage div:nth-child(4) { background-image: url('https://i.pinimg.com/736x/81/a1/3e/81a13ece68a4843503a05b3b1d8e264c.jpg'); }
+.background-collage div:nth-child(5) { background-image: url('https://i.pinimg.com/736x/ca/8f/54/ca8f546b0565f3356f519a346e9dc35c.jpg'); }
+.background-collage div:nth-child(6) { background-image: url('https://i.pinimg.com/474x/51/f5/dd/51f5ddb6fd3b6da977b6de10bf314842.jpg'); }
+.background-collage div:nth-child(7) { background-image: url('https://i.pinimg.com/474x/ad/cf/bf/adcfbf87fee9eb5af76993df44e890c7.jpg'); }
+.background-collage div:nth-child(8) { background-image: url('https://i.pinimg.com/474x/81/a1/3e/81a13ece68a4843503a05b3b1d8e264c.jpg'); }
+.background-collage div:nth-child(9) { background-image: url('https://i.pinimg.com/474x/dc/07/bb/dc07bb44aeeeb368c05b288f0c96a4aa.jpg'); }

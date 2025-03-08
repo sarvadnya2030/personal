@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Banavli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Initial Screen -->
+    <div id="initialScreen" class="screen">
+        <button id="clickMeButton">Click Me</button>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="mainContent" class="screen hidden">
+        <!-- Background Collage -->
+        <div class="background-collage">
+            <div></div> <div></div> <div></div>
+            <div></div> <div></div> <div></div>
+            <div></div> <div></div> <div></div>
+        </div>
+
+        <!-- Overlay for Dark Effect -->
+        <div class="overlay"></div>
+
+        <!-- Main Message -->
+        <div class="message-container">
+            <div class="main-message">Happy Women's Day to the most wonderful, beautiful, and creative person I know.</div>
+            <div class="main-message">Here are some virtual flowers!</div>
+        </div>
+
+        <!-- Bottom Right Message -->
+        <div class="bottom-right-message">The flowers aren't as pretty as you, tho. </div>
+    </div>
+
+    <!-- Audio (Autoplay Enabled) -->
+    <audio id="backgroundAudio" loop>
+        <source src="audio/videoplayback.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
